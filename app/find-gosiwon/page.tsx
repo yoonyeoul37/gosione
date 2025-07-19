@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin, DollarSign, Calendar, User, MessageCircle, Plus, Filter, Home, Users, Building, Star, Phone, Mail, Edit, Trash2, Camera, X, Heart, Eye } from 'lucide-react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // 찾아요 게시글 더미 데이터
 const mockFindPosts = [
@@ -506,6 +507,8 @@ export default function FindGosiwonPage() {
           </div>
         )}
       </div>
+      
+      <Footer />
     </div>
   );
 }
