@@ -38,8 +38,9 @@ export default function Hero() {
             >
               {/* Main Heading */}
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                월별 임대 – 간단하고 안전하며<br />
-                스트레스 없는 서비스
+                스마트하게 즐기는<br />
+                월 단위 1인 주거 라이프.<br />
+                복잡함은 줄이고, 편안함은 더하고.
               </h1>
               
               {/* Sub-heading */}
