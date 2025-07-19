@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Bed, MapPin, Calendar, ArrowRight, Users, Wifi, ParkingCircle, Utensils, User, Train } from 'lucide-react'
+import { Bed, MapPin, Calendar, ArrowRight, Users, Wifi, ParkingCircle, Utensils, User, Train, Home } from 'lucide-react'
 import Link from 'next/link'
 import { gosiwonData } from '@/lib/data'
 import ReservationModal from './ReservationModal'
@@ -100,8 +100,6 @@ export default function AvailableRoomsSection() {
   }
 
   function getGenderIcon(type: string) {
-    if (!type) return null;
-    
     switch (type) {
       case 'male':
         return <User size={16} className="text-blue-500 inline-block ml-2" />
@@ -163,7 +161,8 @@ export default function AvailableRoomsSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            🏠 현재 입주 가능한 방
+            <Home size={32} className="inline mr-2 text-blue-600" />
+            현재 입주 가능한 방
           </h2>
           <p className="text-gray-600 text-lg">
             지금 바로 입주할 수 있는 <span className="font-semibold text-blue-600">{availableRooms.length}개의 방</span>을 확인해보세요
